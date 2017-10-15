@@ -258,19 +258,17 @@
 									add(key);
 								elseif bPiercingWeapon and value.bPiercing then
 									add(key);
-								elseif bBludgeoningWeapon and bBludgeoning then
+								elseif bBludgeoningWeapon and value.bBludgeoning then
 									add(key);
 								end
 							end
 						elseif bRangedWeapon then
 							for key,value in pairs(MagicItemGenerator.aRangedWeaponAbilities) do
-								if value.bCrossbow then
-									if bCrossbow then
-										add(key)
-									end
-								elseif value.bBow then
-									if bBow then
-										add(key)
+								if value.bCrossbow or value.bBow then
+									if value.bCrossbow and bCrossbow then
+										add(key);
+									elseif value.bBow and bBow then
+										add(key);
 									end
 								else
 									add(key);
@@ -332,19 +330,17 @@
 									add(key);
 								elseif bPiercingWeapon and value.bPiercing then
 									add(key);
-								elseif bBludgeoningWeapon and bBludgeoning then
+								elseif bBludgeoningWeapon and value.bBludgeoning then
 									add(key);
 								end
 							end
 						elseif bRangedWeapon then
 							for key,value in pairs(MagicItemGenerator.aRangedWeaponAbilities) do
-								if value.bCrossbow then
-									if bCrossbow then
-										add(key)
-									end
-								elseif value.bBow then
-									if bBow then
-										add(key)
+								if value.bCrossbow or value.bBow then
+									if value.bCrossbow and bCrossbow then
+										add(key);
+									elseif value.bBow and bBow then
+										add(key);
 									end
 								else
 									add(key);

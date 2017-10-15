@@ -196,4 +196,12 @@
 	<string name="gold">Gold</string>
 	<string name="obsidian">Obsidian</string>
 	<string name="stone">Stone</string>
+	<string name="deflecting">Deflecting</string>
+	<string name="denying">Denying</string>
+	<string name="resonating">Resonating</string>
+	<string name="disjoining">Disjoining</string>
+	<string name="harvesting">Harvesting</string>
+	<string name="mythic bane">Mythic bane</string>
+	<string name="potent">Potent</string>
+	<string name="sacrosanct">Sacrosanct</string>
 </root>
